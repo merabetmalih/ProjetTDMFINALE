@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this, MojawidActivity::class.java)
             startActivity(intent)
         }
-        tafsir_to.setOnClickListener{
-            val intent=Intent(this, MofasirActivity::class.java)
+        goToSearch.setOnClickListener{
+            val intent=Intent(this,SearchActivity::class.java)
             startActivity(intent)
         }
  }
