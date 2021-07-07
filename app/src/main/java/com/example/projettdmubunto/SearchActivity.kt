@@ -22,12 +22,12 @@ class SearchActivity : AppCompatActivity() {
         val historyDao = RoomService.getDatabase(context=this@SearchActivity).getHistoryDo()
 
          var  historyList=   historyDao.getAllHistory()
-        var listYacine =mutableListOf<String>()
+        var listhisto =mutableListOf<String>()
          for ( m in historyList)
          {
-              listYacine.add(m.Racine!!)
+              listhisto.add(m.Racine!!)
          }
-        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1 , listYacine)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1 , listhisto)
         search_list.adapter = adapter
         search_list.setOnItemClickListener { parent, view, position, id ->
             val intent =Intent(this@SearchActivity,RacineActivity::class.java)

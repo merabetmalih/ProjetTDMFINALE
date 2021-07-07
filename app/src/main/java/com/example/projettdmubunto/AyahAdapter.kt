@@ -3,7 +3,6 @@ package com.example.projettdmubunto
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 import android.content.Context
@@ -11,15 +10,14 @@ import android.content.Intent
 import android.media.AudioManager
 import android.media.MediaPlayer
 import android.util.Log
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.core.content.ContextCompat.startActivity
 import com.example.projettdmubunto.Ayah
 import com.example.projettdmubunto.Interface.RetrofitService
 import com.example.td4_exo4.Response.AyahDetail
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.searchpage.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -85,8 +83,13 @@ class AyahAdapter(val context:Context, var data:List<Ayah>, val onClick :()->Uni
 
         }
         holder.saveImage.setOnClickListener {
+            Toast.makeText(context, "AyahSaved", Toast.LENGTH_SHORT).show()
+            val ayadeo = RoomService.getDatabase(context).getAyahSavedDo()
+            ayadeo.insertAyahSaved(AyahSaved(data[position].textAR))
 
-            val database = Firebase.database
+
+
+            /*val database = Firebase.database
             val Ref = database.getReference("message")
             Ref.setValue("Hello, World!")
             val myRef = database.getReference("ayas_data").push()
@@ -94,7 +97,7 @@ class AyahAdapter(val context:Context, var data:List<Ayah>, val onClick :()->Uni
             myRef.child("textAr").setValue(data[position].textAR)
             myRef.setValue(data[position].IDAya).addOnCompleteListener {
                 Toast.makeText(context, "SAVED", Toast.LENGTH_SHORT).show()
-            }
+            }*/
         }
 
     }
