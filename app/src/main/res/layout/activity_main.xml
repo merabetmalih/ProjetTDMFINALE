@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ayacoinc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Racine"
+        android:layout_width="94dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Racine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mynote"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_feather_bookmark" />
+
+    <ImageView
+        android:id="@+id/listen_to"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/mynote"
+        app:layout_constraintTop_toTopOf="@+id/mynote"
+        app:srcCompat="@drawable/icon_material_record_voice_over" />
+
+    <ImageView
+        android:id="@+id/tafsir_to"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/listen_to"
+        app:layout_constraintTop_toTopOf="@+id/listen_to"
+        app:srcCompat="@drawable/icon_feather_book_open" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

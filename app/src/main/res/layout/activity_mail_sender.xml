@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--EditText: Input the recipient-->
+    <EditText
+        android:id="@+id/recipientEt"
+        android:layout_width="313dp"
+        android:layout_height="56dp"
+        android:editable="true"
+        android:hint="Recipient email(s)"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/design_default_color_on_primary" />
+
+    <!--EditText: Input the subject of email-->
+    <EditText
+        android:id="@+id/subjectEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_full_open_on_phone"
+        android:hint="Subject"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="text|textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/design_default_color_on_primary" />
+
+    <!--EditText: Input the message-->
+    <EditText
+        android:id="@+id/messageEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_icon_dark"
+        android:gravity="start"
+        android:hint="Enter message here..."
+        android:inputType="text|textCapSentences"
+        android:minHeight="150dp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <!--Button:   Launch existing email clients to send email-->
+    <Button
+        android:id="@+id/sendEmailBtn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="send Email" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ayahen"
+        android:layout_width="282dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayahAr" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ayahAr"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/icon_feather_play" />
+
+    <ImageView
+        android:id="@+id/sendViaMail"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ayahAr"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/icon_metro_share" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ayahAr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_feather_bookmark" />
+
+
+    <ImageView
+        android:id="@+id/tafsir_id_image"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/ayahAr"
+        app:layout_constraintEnd_toStartOf="@+id/sendViaMail"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904"
+        app:srcCompat="@drawable/icon_feather_book_open" />
+
+    <TextView
+        android:id="@+id/ayahAr"
+        android:layout_width="278dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="68dp"
+        android:text="TextView"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

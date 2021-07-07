@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515363577141",
+    "project_id": "projettdm-a95f3",
+    "storage_bucket": "projettdm-a95f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515363577141:android:5a3b62a21ac6e10f70007c",
+        "android_client_info": {
+          "package_name": "com.example.projettdmubunto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515363577141-jiedfeep6qhpoquqn6gctl2s634l3gtc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6TCucZPOUHNj2Tc-UMe8c8jLlYJTgYYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515363577141-jiedfeep6qhpoquqn6gctl2s634l3gtc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

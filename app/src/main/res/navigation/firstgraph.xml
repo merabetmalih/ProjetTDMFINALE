@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstgraph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.projettdmubunto.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_searchActivity"
+            app:destination="@id/searchActivity"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </activity>
+    <activity
+        android:id="@+id/racineActivity"
+        android:name="com.example.projettdmubunto.RacineActivity"
+        android:label="RacineActivity" >
+        <action
+            android:id="@+id/action_racineActivity_to_detailsActivity2"
+            app:destination="@id/detailsActivity" />
+    </activity>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.projettdmubunto.detailsActivity"
+        android:label="detailsActivity" />
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="com.example.projettdmubunto.SearchActivity"
+        android:label="SearchActivity" >
+        <action
+            android:id="@+id/action_searchActivity_to_racineActivity2"
+            app:destination="@id/racineActivity"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </activity>
+</navigation>
