@@ -42,15 +42,17 @@ class AyahAdapter(val context:Context, var data:List<Ayah>, val onClick :()->Uni
 
 
         holder.Ayahar.setOnClickListener {
-           onClick()
+            val intent=Intent(context,MofasirActivity::class.java)
+            intent.putExtra("aya",data[position])
+            context.startActivity(intent)
         }
         holder.Ayahen.setOnClickListener {
             onClick()
         }
         holder.sendViaMail.setOnClickListener{
             val intent=Intent(context,MailSender::class.java)
-            context.startActivity(intent)
             intent.putExtra("aya",data[position].textAR)
+            context.startActivity(intent)
             Toast.makeText(context, "ToSender", Toast.LENGTH_SHORT).show()
         }
         holder.tafsir.setOnClickListener{
