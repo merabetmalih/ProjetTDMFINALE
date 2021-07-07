@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 */
 
         mynote.setOnClickListener{
-          val intent=Intent(this,SearchActivity::class.java)
+          val intent=Intent(this,AyatSaved::class.java)
           startActivity(intent)
         }
         listen_to.setOnClickListener{
