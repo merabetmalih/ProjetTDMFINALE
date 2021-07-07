@@ -40,7 +40,9 @@ class AyahAdapter(val context:Context, var data:List<Ayah>, val onClick :()->Uni
 
 
         holder.Ayahar.setOnClickListener {
-           onClick()
+            val intent=Intent(context,detailsActivity::class.java)
+            intent.putExtra("ayah",data[position])
+            context.startActivity(intent)
         }
         holder.Ayahen.setOnClickListener {
             onClick()

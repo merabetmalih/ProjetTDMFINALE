@@ -8,24 +8,15 @@
 
     <ImageView
         android:id="@+id/gotosearch2"
-        android:layout_width="40dp"
-        android:layout_height="34dp"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/gotomenu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_1555" />
-
-    <ImageView
-
-        android:id="@+id/gotomenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        app:srcCompat="@drawable/group_1555"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/slideBack"
@@ -62,14 +53,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mask_group_7" />
 
+    <TextView
+        android:id="@+id/traduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/ayamushaf"
-        android:layout_width="410dp"
-        android:layout_height="478dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:srcCompat="@drawable/mask_group_8" />
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
